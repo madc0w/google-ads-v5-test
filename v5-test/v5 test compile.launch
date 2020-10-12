@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.m2e.Maven2LaunchConfigurationType">
+    <booleanAttribute key="M2_DEBUG_OUTPUT" value="true"/>
+    <stringAttribute key="M2_GOALS" value="clean compile"/>
+    <booleanAttribute key="M2_NON_RECURSIVE" value="false"/>
+    <booleanAttribute key="M2_OFFLINE" value="false"/>
+    <stringAttribute key="M2_PROFILES" value=""/>
+    <listAttribute key="M2_PROPERTIES"/>
+    <stringAttribute key="M2_RUNTIME" value="apache-maven-3.6.3"/>
+    <booleanAttribute key="M2_SKIP_TESTS" value="false"/>
+    <intAttribute key="M2_THREADS" value="1"/>
+    <booleanAttribute key="M2_UPDATE_SNAPSHOTS" value="false"/>
+    <stringAttribute key="M2_USER_SETTINGS" value=""/>
+    <booleanAttribute key="M2_WORKSPACE_RESOLUTION" value="true"/>
+    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+        <mapEntry key="AUTH_TOKEN" value="cvnj9834z5okjv09ssdjg"/>
+        <mapEntry key="DEBUG" value="true"/>
+        <mapEntry key="GOOGLE_ADS.ACCT_ID" value="8239330129"/>
+        <mapEntry key="GOOGLE_ADS.CLIENT_ID" value="319128982826-1fdutlo2cke813uh7sutck7oasrmjg71.apps.googleusercontent.com"/>
+        <mapEntry key="GOOGLE_ADS.CLIENT_SECRET" value="IP8a3DWMymk5uFunN5G0c3Ec"/>
+        <mapEntry key="GOOGLE_ADS.DEVELOPER_TOKEN" value="3GjuKJoZjS9ina42Xs88xQ"/>
+        <mapEntry key="GOOGLE_ADS.IS_PARTIAL_FAILURE" value="false"/>
+        <mapEntry key="GOOGLE_ADS.LOGIN_CUSTOMER_ID" value="5494549800"/>
+        <mapEntry key="GOOGLE_ADS.REFRESH_TOKEN" value="1/mxyq2dsw7yX7bfhiu_XK3yAOZH0n2-hFXMl93ntsSLI"/>
+        <mapEntry key="GOOGLE_ADS.SERVICE_ACCOUNT_USER" value="balloonary.test@gmail.com"/>
+    </mapAttribute>
+    <stringAttribute key="org.eclipse.debug.core.source_locator_id" value="org.eclipse.m2e.launching.MavenSourceLocator"/>
+    <stringAttribute key="org.eclipse.debug.core.source_locator_memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;sourceLookupDirector&gt;&#13;&#10;&lt;sourceContainers duplicates=&quot;false&quot;&gt;&#13;&#10;&lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#13;&amp;#10;&amp;lt;workspace/&amp;gt;&amp;#13;&amp;#10;&quot; typeId=&quot;org.eclipse.debug.core.containerType.workspace&quot;/&gt;&#13;&#10;&lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#13;&amp;#10;&amp;lt;javaProject name=&amp;quot;Balloonary backend server&amp;quot;/&amp;gt;&amp;#13;&amp;#10;&quot; typeId=&quot;org.eclipse.jdt.launching.sourceContainer.javaProject&quot;/&gt;&#13;&#10;&lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#13;&amp;#10;&amp;lt;default/&amp;gt;&amp;#13;&amp;#10;&quot; typeId=&quot;org.eclipse.debug.core.containerType.default&quot;/&gt;&#13;&#10;&lt;/sourceContainers&gt;&#13;&#10;&lt;/sourceLookupDirector&gt;&#13;&#10;"/>
+    <listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+        <listEntry value="org.eclipse.debug.ui.launchGroup.debug"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xmx1g  -Djava.util.logging.config.file=/Users/mad/git/balloonary-backend/src/main/resources/jdk-logger.properties"/>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${workspace_loc:/v5-test}"/>
+</launchConfiguration>

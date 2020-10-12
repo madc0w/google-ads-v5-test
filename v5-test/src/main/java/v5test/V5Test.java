@@ -24,6 +24,7 @@ public class V5Test implements Runnable {
 	}
 
 	public void run() {
+		System.out.println("starting...");
 		final String customerId = System.getenv("GOOGLE_ADS.ACCT_ID");
 		final UrlSeed urlSeed = UrlSeed.newBuilder().setUrl(StringValue.of("https://wordsimade.wordpress.com/2019/08/22/giants-among-us/")).build();
 		final Builder builder = GenerateKeywordIdeasRequest.newBuilder().setCustomerId(customerId).setUrlSeed(urlSeed);
