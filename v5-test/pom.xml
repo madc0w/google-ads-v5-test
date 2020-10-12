@@ -34,7 +34,7 @@
 					<assembleDirectory>target</assembleDirectory>
 					<programs>
 						<program>
-							<mainClass>V5Test</mainClass>
+							<mainClass>v5test.V5Test</mainClass>
 							<name>worker</name>
 						</program>
 <!-- 						<program> -->
