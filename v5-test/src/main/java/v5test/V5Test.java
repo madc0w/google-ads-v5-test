@@ -23,8 +23,19 @@ public class V5Test implements Runnable {
 		googleAdsClient = setupGoogleAdsClient();
 	}
 
-	public static void main(final String[] args) {
-		new V5Test().run();
+	public void run() {
+		final String customerId = System.getenv("GOOGLE_ADS.ACCT_ID");
+		final UrlSeed urlSeed = UrlSeed.newBuilder().setUrl(StringValue.of("https://wordsimade.wordpress.com/2019/08/22/giants-among-us/")).build();
+		final Builder builder = GenerateKeywordIdeasRequest.newBuilder().setCustomerId(customerId).setUrlSeed(urlSeed);
+		final GenerateKeywordIdeasRequest request = builder.build();
+		final KeywordPlanIdeaServiceClient keywordPlanIdeaServiceClient = googleAdsClient.createKeywordPlanIdeaServiceClient();
+		final GenerateKeywordIdeasPagedResponse response = keywordPlanIdeaServiceClient.generateKeywordIdeas(request);
+
+		for (final GenerateKeywordIdeaResult result : response.getPage().getValues()) {
+			System.out.println("text:\t\t\t" + result.getText().getValue());
+			System.out.println("avg monthly searches:\t" + result.getKeywordIdeaMetrics().getAvgMonthlySearches().getValue());
+			System.out.println();
+		}
 	}
 
 	private GoogleAdsVersion setupGoogleAdsClient() {
@@ -61,19 +72,8 @@ public class V5Test implements Runnable {
 		}
 	}
 
-	public void run() {
-		final String customerId = System.getenv("GOOGLE_ADS.ACCT_ID");
-		final UrlSeed urlSeed = UrlSeed.newBuilder().setUrl(StringValue.of("https://wordsimade.wordpress.com/2019/08/22/giants-among-us/")).build();
-		final Builder builder = GenerateKeywordIdeasRequest.newBuilder().setCustomerId(customerId).setUrlSeed(urlSeed);
-		final GenerateKeywordIdeasRequest request = builder.build();
-		final KeywordPlanIdeaServiceClient keywordPlanIdeaServiceClient = googleAdsClient.createKeywordPlanIdeaServiceClient();
-		final GenerateKeywordIdeasPagedResponse response = keywordPlanIdeaServiceClient.generateKeywordIdeas(request);
-
-		for (final GenerateKeywordIdeaResult result : response.getPage().getValues()) {
-			System.out.println("text:\t\t\t" + result.getText().getValue());
-			System.out.println("avg monthly searches:\t" + result.getKeywordIdeaMetrics().getAvgMonthlySearches().getValue());
-			System.out.println();
-		}
+	public static void main(final String[] args) {
+		new V5Test().run();
 	}
 
 }
